@@ -1,0 +1,97 @@
+    body {
+  background: #f44336;
+  margin: 0px;
+}
+body .tb {
+  background: #d32f2f;
+  height: 8px;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 99;
+}
+body .rollDice {
+  -webkit-animation: roll 3s 1;
+  transform: rotate(360deg);
+}
+body .dice {
+  width: 100px;
+  height: 100px;
+  background: #e57373;
+  margin: 0px auto;
+  border-right: solid 15px  #ef5350;
+  border-top: solid 15px  #ef5350;
+  margin-top: 30vh;
+}
+body .dice .t {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-right: 30px solid #f44336;
+  border-bottom: 15px solid transparent;
+  transform: rotate(-70deg);
+  position: relative;
+  top: -27px;
+  left: -10px;
+}
+body .dice .tt {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-right: 30px solid #f44336;
+  border-bottom: 15px solid transparent;
+  transform: rotate(100deg);
+  position: relative;
+  top: 44px;
+  left: 101px;
+}
+body .dice .decoration {
+  background: #e53935;
+  height: 3px;
+  width: 20px;
+  float: right;
+  position: relative;
+  left: 18px;
+  top: -9px;
+  transform: rotate(-45deg);
+}
+body .dice .dots p {
+  margin: 0px auto;
+  text-align: center;
+  margin-top: -25px;
+  font-size: 24px;
+  color: #b71c1c;
+  font-family: Tahoma;
+}
+body button {
+  background: #d50000;
+  color: white;
+  border: solid 6px #d50000;
+  border-radius: 50px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-family: Tahoma;
+  font-weight: bold;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  cursor: pointer;
+}
+body button:focus {
+  outline: 0px;
+}
+@-webkit-keyframes roll {
+  0% {
+    transform: rotate(0deg);
+    color: #e57373;
+  }
+  10% {
+    margin-top: -2px;
+    transform: rotate(-50deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    color: #e57373;
+  }
+}
